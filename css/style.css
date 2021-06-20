@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Mulish", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 90%;
+}
+.header {
+  padding: 15px 0;
+}
+.navbar {
+  background-color: #000 !important;
+}
+.header-icon {
+  margin-right: 75px;
+}
+.header-icon.last {
+  margin-right: 0;
+}
+.nav-link {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff !important;
+  opacity: 0.5;
+}
+.nav-link.active {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 1;
+  color: #ffffff !important;
+}
+.nav-link.active:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 46px;
+  background: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
+  border-radius: 50px;
+  margin-top: 8px;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url(https://img.icons8.com/?id=44024&size=2x&color=000000);
+  background-size: 70px;
+}
+.navbar-nav {
+  margin: auto;
+}
+.hero-img {
+  width: 600px;
+}
+.hero {
+  padding-top: 50px;
+  padding-bottom: 71px;
+  background: #010101;
+  box-shadow: 100px 0px 100px #000000;
+}
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-text {
+  display: block;
+  max-width: 567px;
+}
+.hero-title {
+  font-family: "Marcellus", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 70px;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+.hero-text-info {
+  display: flex;
+  align-items: center;
+}
+.hero-text-info {
+  margin-bottom: 25px;
+}
+.hero-info-year {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 10px;
+  color: #ffffff;
+  margin-right: 18px;
+}
+.hero-info-age {
+  border-radius: 50px;
+  padding: 6px 15px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 12px;
+  color: #ffffff;
+  background: linear-gradient(#26fff2 20%, #326cff 80%);
+  margin-right: 18px;
+}
+.hero-info-last {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 10px;
+  color: #ffffff;
+  margin-right: 41px;
+}
+.hero-info-rating {
+  display: flex;
+  align-items: center;
+}
+.rating {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 10px;
+  color: #ffffff;
+  margin-right: 10px;
+}
+.hero-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #c2c2c2;
+  margin-top: 0;
+  margin-bottom: 40px;
+  max-width: 507px;
+}
+.hero-buttons {
+  display: flex;
+  align-items: center;
+}
+.hero-button-watch {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
+  border-radius: 100px;
+  padding: 15px 30px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 30px;
+  color: #ffffff;
+  box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
+}
+.hero-button-watch img {
+  margin-right: 15px;
+}
+.hero-button-watch:hover {
+  opacity: 0.8;
+  color: #fff;
+}
+.hero-button-more {
+  background: #ffffff;
+  border-radius: 100px;
+  padding: 15px 30px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323232;
+}
+.hero-button-more:hover {
+  color: #323232;
+  opacity: 0.8;
+}
+.shows {
+  padding: 68px 0;
+}
+.shows-wrapper {
+  flex-wrap: wrap;
+}
+.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 47px;
+  display: flex;
+  align-items: center;
+}
+.title:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+.title-img {
+  margin-left: 11px;
+}
+.title::before {
+  content: "";
+  display: inline-block;
+  height: 35px;
+  width: 8px;
+  background: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
+  border-radius: 50px;
+  margin-right: 11px;
+}
+.shows-item-img,
+.movies-item-img {
+  width: 203px;
+  height: 309px;
+  border-radius: 20px;
+  transition: all 0.3s cubic-bezier(0.29, 0.72, 1, -0.55);
+}
+.show-item {
+  max-width: 204px;
+  min-height: 307px;
+  width: 100%;
+}
+.shows-item-img:hover,
+.movies-item-img:hover {
+  box-shadow: 0px 4px 7px 7px #26fff2;
+  width: 206px;
+  min-height: 309px;
+}
+.movies {
+  padding-bottom: 108px;
+}
+.button {
+  padding: 15px 34px;
+  background: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
+  box-shadow: 0px 4px 4px rgba(50, 108, 255, 0.5);
+  border-radius: 100px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.popular {
+  padding-bottom: 78px;
+}
+.popular-item {
+  padding: 60px 107px 0 107px;
+  max-width: 300px;
+  min-height: 198px;
+  border-radius: 20px;
+  margin-bottom: 27px;
+  transition: all 0.3s cubic-bezier(0.29, 0.72, 1, -0.55);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.popular-item-1 {
+  background: linear-gradient(109.31deg, #fd093f 2.4%, #f383f1 100%);
+}
+.popular-item-2 {
+  background: linear-gradient(114.5deg, #0fffda 2.22%, #3cdb77 68.84%);
+}
+.popular-item-3 {
+  background: linear-gradient(109.31deg, #b936ff 2.4%, #57deda 100%);
+}
+.popular-item-4 {
+  background: linear-gradient(
+    109.31deg,
+    #fd093f 2.4%,
+    #fb1378 2.41%,
+    #fccb1a 100%
+  );
+}
+.popular-item-5 {
+  background: linear-gradient(109.31deg, #ff6472 2.4%, #fda75d 100%);
+}
+.popular-item-6 {
+  background: linear-gradient(110.16deg, #13547a 2.37%, #80d0c7 96.77%);
+}
+.popular-item-7 {
+  background: linear-gradient(109.93deg, #fff77b 2.37%, #ffbf42 50%);
+}
+.popular-item-8 {
+  background: linear-gradient(
+    109.31deg,
+    #1fa2ff 2.4%,
+    #1fa2ff 2.41%,
+    #1f535c 97.46%
+  );
+}
+.popular-item-img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+.popular-item:hover {
+  opacity: 0.8;
+}
+.popular-item a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.actors {
+  padding-bottom: 97px;
+}
